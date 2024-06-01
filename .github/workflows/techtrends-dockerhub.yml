@@ -28,6 +28,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/techtrends:latest
+        tags: angze/techtrends:latest
 
 
