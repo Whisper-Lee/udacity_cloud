@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends
+description: Helm for TechTrends deployment
+keywords:
+- techtrends
+version: 1.0.0
+maintainers:
+- name: angze
+  email: angze.li.xb@renesas.com
