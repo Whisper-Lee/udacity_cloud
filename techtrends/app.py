@@ -1,13 +1,19 @@
 import sqlite3
+import logging
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 
+
+db_connection = 0
+
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
 def get_db_connection():
+    global db_connection
     connection = sqlite3.connect('database.db')
     connection.row_factory = sqlite3.Row
+    db_connection += 1
     return connection
 
 # Function to get a post using its ID
@@ -65,6 +71,47 @@ def create():
 
     return render_template('create.html')
 
+@app.route('/metrics')
+def metrics():
+    global db_connection
+    connection = get_db_connection()
+    posts = connection.execute('SELECT * FROM posts').fetchall()
+    connection.close()
+    response = app.response_class(
+            response=json.dumps({"status":"success","code":0,"data":{"db_connection_count":db_connection,"post_count":len(posts)}}),
+            status=200,
+            mimetype='application/json'
+    )
+
+    ## log line
+    app.logger.info('Metrics request successfull')
+    return response
+
+@app.route('/healthz')
+def healthz():
+    response = app.response_class(
+            response=json.dumps({"result":"OK - healthy"}),
+            status=200,
+            mimetype='application/json'
+    )
+    return response
+
+def retrieve_article():
+    # Simulate retrieving an article
+    article = {
+        "title": "2020 CNCF Annual Report",
+    }
+    return article
+
+def log_article_title(article):
+    logging.info(f"Article : {article['title']}")
+
 # start the application on port 3111
 if __name__ == "__main__":
+   
+   logging.basicConfig(filename='app.log',level=logging.DEBUG)
+
+   article = retrieve_article()
+   log_article_title(article)  
+   
    app.run(host='0.0.0.0', port='3111')
