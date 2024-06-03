@@ -1,0 +1,66 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://10.166.20.84:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://10.166.20.84:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:46] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:52] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:59] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:13:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:24] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:26] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:29] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:32] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:14:36] "[33mGET /da HTTP/1.1[0m" 404 -
+INFO:root:Article : 2020 CNCF Annual Report
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://10.166.20.84:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:25] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:32] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:37] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:43] "[33mGET /55 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:55] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:23:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:24:00] "[33mGET /da HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:24:04] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:24:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:24:07] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:24:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:Article : 2020 CNCF Annual Report
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://10.166.20.84:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Article : 2020 CNCF Annual Report
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://10.166.20.84:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
