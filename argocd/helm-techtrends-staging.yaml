@@ -1,21 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: techtrends-staging
+  name: techtrends-staging 
   namespace: argocd
 spec:
   destination:
+    namespace: default
     server: https://kubernetes.default.svc
-    namespace: sandbox
   project: default
   source:
     helm:
       valueFiles:
-      - values-staging.yaml
+      - values-staging.yaml 
     path: helm
     repoURL: https://github.com/Whisper-Lee/udacity_cloud
     targetRevision: HEAD
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+ # Sync policy
+  syncPolicy: {}

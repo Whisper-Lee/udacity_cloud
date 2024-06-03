@@ -17,7 +17,6 @@ spec:
     spec:
       containers:
       - image: angze/techtrends:latest
-        imagePullPolicy: IfNotPresent
         name: techtrends
         ports:
             - containerPort: 3111
