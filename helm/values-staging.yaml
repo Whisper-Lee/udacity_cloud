@@ -23,5 +23,11 @@ resources:
     CPU: 500m
 
 containerPort: 3111
-livenessProbePath: /healthz
-readinessProbePath: /healthz
+
+livenessProbe:
+  path: /healthz
+  port: 3111
+
+readinessProbe:
+  path: /healthz
+  port: 3111
